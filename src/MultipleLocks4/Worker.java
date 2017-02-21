@@ -25,7 +25,7 @@ class Worker {
 
 
     //since two synchronized block inside methods stageOne() and stageTwo() have two different lock objects,
-    // two  different threads can simultaneously execute these two different methods with different lock objects inside synchronized block
+    // two  different threads can simultaneously execute these two different methods with two different lock objects inside two synchronized block
 
     private void stageOne() {
 
