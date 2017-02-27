@@ -31,17 +31,16 @@ public class App {
         try {
             /* join() method : - It can be used to pause the current thread execution until
             unless the specified thread is dead.
-
-                              - Waits for this thread to die
             */
 
              //let all threads ie. thread1 and thread2 finish execution before finishing main thread
-            thread1.join(); //Waits for this thread to die
-            thread2.join();  //Waits for this thread to die
+            thread1.join(); //Waits for this thread to die i.e thread1
+            thread2.join();  //Waits for this thread to die i.e thread2
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
+        //thread1 and thread2 are running infinite threads, this statement never gets called.
         System.out.println("All threads are dead and main thread is resumed.");
     }
 
